@@ -1,88 +1,99 @@
 [
-      {
+  {
       "type": "lion",
       "count": 5,
-      "eat": "meat",
-      "food": 23
-    
+      "minimumFoodCount": 3,
+      "foodType": "meat",
+      "foodCount": 23
+      
 },
 {
   
       "type": "monkey",
       "count": 9,
-      "eat": "fruit",
-      "food": 32
+      "minimumFoodCount": 3,
+      "foodType": "fruit",
+      "foodCount": 32
     
 },
 {
   
       "type": "elephant",
       "count": 3,
-      "eat": "grass",
-      "food": 19
+      "minimumFoodCount": 4,
+      "foodType": "grass",
+      "foodCount": 19
     
 },
 {
   
       "type": "parrot",
       "count": 14,
-      "eat": "seed",
-      "food": 32
+      "minimumFoodCount": 2,
+      "foodType": "seed",
+      "foodCount": 32
     
 },
 {
   
       "type": "pandas",
       "count": 6,
-      "eat": "bamboo",
-      "food": 26
+      "minimumFoodCount": 4,
+      "foodType": "bamboo",
+      "foodCount": 26
     
 },
 {
   
       "type": "wolves",
       "count": 3,
-      "eat": "meat",
-      "food": 21
+      "minimumFoodCount": 4,
+      "foodType": "meat",
+      "foodCount": 21
     
 },
 {
   
       "type": "zebras",
       "count": 4,
-      "eat": "hay",
-      "food": 26
+      "minimumFoodCount": 4,
+      "foodType": "hay",
+      "foodCount": 26
     
 },
 {
   
       "type": "unicorn",
       "count": 2,
-      "eat": "rainbow",
-      "food": 25
+      "minimumFoodCount": 6,
+      "foodType": "rainbow",
+      "foodCount": 25
     
 },
 {
   
       "type": "hippo",
       "count": 4,
-      "eat": "fruit",
-      "food": 22
+      "minimumFoodCount": 4,
+      "foodType": "fruit",
+      "foodCount": 22
     
 },
 {
   
       "type": "shark",
       "count": 7,
-      "eat": "fish",
-      "food": 44
+      "minimumFoodCount": 5,
+      "foodType": "fish",
+      "foodCount": 44
     
 },
 {
   
       "type": "bear",
       "count": 3,
-      "eat": "fish",
-      "food": 44
+      "minimumFoodCount": 7,
+      "foodType": "fish",
+      "foodCount": 43
     }
 ]

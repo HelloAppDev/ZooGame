@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		150936ED274679F1002044E6 /* ZooTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150936EC274679F1002044E6 /* ZooTableViewController.swift */; };
 		150936EF27495E29002044E6 /* StockhouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150936EE27495E29002044E6 /* StockhouseVC.swift */; };
+		155199D9274D028500F26013 /* FoodType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155199D8274D028500F26013 /* FoodType.swift */; };
 		15B022DB2743F8F1003AA39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022DA2743F8F1003AA39B /* AppDelegate.swift */; };
 		15B022DD2743F8F1003AA39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022DC2743F8F1003AA39B /* SceneDelegate.swift */; };
 		15B022DF2743F8F1003AA39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022DE2743F8F1003AA39B /* ViewController.swift */; };
@@ -16,13 +17,14 @@
 		15B022E52743F8F1003AA39B /* ZooGame.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 15B022E32743F8F1003AA39B /* ZooGame.xcdatamodeld */; };
 		15B022E72743F8F2003AA39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15B022E62743F8F2003AA39B /* Assets.xcassets */; };
 		15B022EA2743F8F2003AA39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B022E82743F8F2003AA39B /* LaunchScreen.storyboard */; };
-		15B022F627451AE0003AA39B /* ZooDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022F527451AE0003AA39B /* ZooDataViewController.swift */; };
+		15B022F627451AE0003AA39B /* ZooDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022F527451AE0003AA39B /* ZooDataModel.swift */; };
 		15B022FA27454287003AA39B /* ZooDataAPI.json in Resources */ = {isa = PBXBuildFile; fileRef = 15B022F927454287003AA39B /* ZooDataAPI.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		150936EC274679F1002044E6 /* ZooTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooTableViewController.swift; sourceTree = "<group>"; };
 		150936EE27495E29002044E6 /* StockhouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockhouseVC.swift; sourceTree = "<group>"; };
+		155199D8274D028500F26013 /* FoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodType.swift; sourceTree = "<group>"; };
 		15B022D72743F8F1003AA39B /* ZooGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B022DA2743F8F1003AA39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15B022DC2743F8F1003AA39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +34,7 @@
 		15B022E62743F8F2003AA39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15B022E92743F8F2003AA39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15B022EB2743F8F2003AA39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15B022F527451AE0003AA39B /* ZooDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooDataViewController.swift; sourceTree = "<group>"; };
+		15B022F527451AE0003AA39B /* ZooDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooDataModel.swift; sourceTree = "<group>"; };
 		15B022F927454287003AA39B /* ZooDataAPI.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ZooDataAPI.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -47,6 +49,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		155199DA274D02E200F26013 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				15B022DE2743F8F1003AA39B /* ViewController.swift */,
+				150936EC274679F1002044E6 /* ZooTableViewController.swift */,
+				150936EE27495E29002044E6 /* StockhouseVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		155199DB274D02EE00F26013 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15B022F527451AE0003AA39B /* ZooDataModel.swift */,
+				155199D8274D028500F26013 /* FoodType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		15B022CE2743F8F1003AA39B = {
 			isa = PBXGroup;
 			children = (
@@ -66,13 +87,11 @@
 		15B022D92743F8F1003AA39B /* ZooGame */ = {
 			isa = PBXGroup;
 			children = (
+				155199DB274D02EE00F26013 /* Models */,
+				155199DA274D02E200F26013 /* ViewController */,
 				15B022F927454287003AA39B /* ZooDataAPI.json */,
-				150936EC274679F1002044E6 /* ZooTableViewController.swift */,
-				150936EE27495E29002044E6 /* StockhouseVC.swift */,
-				15B022F527451AE0003AA39B /* ZooDataViewController.swift */,
 				15B022DA2743F8F1003AA39B /* AppDelegate.swift */,
 				15B022DC2743F8F1003AA39B /* SceneDelegate.swift */,
-				15B022DE2743F8F1003AA39B /* ViewController.swift */,
 				15B022E02743F8F1003AA39B /* Main.storyboard */,
 				15B022E62743F8F2003AA39B /* Assets.xcassets */,
 				15B022E82743F8F2003AA39B /* LaunchScreen.storyboard */,
@@ -153,9 +172,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B022F627451AE0003AA39B /* ZooDataViewController.swift in Sources */,
+				15B022F627451AE0003AA39B /* ZooDataModel.swift in Sources */,
 				150936EF27495E29002044E6 /* StockhouseVC.swift in Sources */,
 				150936ED274679F1002044E6 /* ZooTableViewController.swift in Sources */,
+				155199D9274D028500F26013 /* FoodType.swift in Sources */,
 				15B022DF2743F8F1003AA39B /* ViewController.swift in Sources */,
 				15B022DB2743F8F1003AA39B /* AppDelegate.swift in Sources */,
 				15B022E52743F8F1003AA39B /* ZooGame.xcdatamodeld in Sources */,

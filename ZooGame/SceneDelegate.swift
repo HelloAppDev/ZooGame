@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  ZooGame
-//
-//  Created by Мария Изюменко on 16.11.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

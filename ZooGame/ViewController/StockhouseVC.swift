@@ -1,16 +1,9 @@
-//
-//  StockhouseVC.swift
-//  ZooGame
-//
-//  Created by Мария Изюменко on 20.11.2021.
-//
-
 import UIKit
 
 class StockhouseVC: UIViewController {
     
-    var foodType = ""
-    var foodCount = ""
+    var foodType: FoodType = .unknown
+    var foodCount: Int = 0
     
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
@@ -28,14 +21,6 @@ class StockhouseVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        meatPressed.tag = 0
-        fruitPressed.tag = 1
-        hayPressed.tag = 2
-        grassPressed.tag = 3
-        rainbowPressed.tag = 4
-        fishPressed.tag = 5
-        bambooPressed.tag = 6
-        seedPressed.tag = 7
     }
     
     func isHiddenFalse() {
@@ -47,40 +32,30 @@ class StockhouseVC: UIViewController {
     
     @IBAction func stepperAction(_ sender: UIStepper) {
         self.quantityLabel.text = Int(sender.value).description
+        foodCount = Int(quantityLabel.text ?? "0") ?? 0
     }
     
     @IBAction func feedButtonPressed(_ sender: UIButton) {
         isHiddenFalse()
-    }
-    
-    @IBAction func sendFood(_ sender: UIButton) {
         switch sender.tag {
         case 0:
-            foodType = "Meat"
-            foodCount = quantityLabel.text!
+            foodType = .meat
         case 1:
-            foodType = "Fruit"
-            foodCount = quantityLabel.text!
+            foodType = .fruit
         case 2:
-            foodType = "Hay"
-            foodCount = quantityLabel.text!
+            foodType = .hay
         case 3:
-            foodType = "Grass"
-            foodCount = quantityLabel.text!
+            foodType = .grass
         case 4:
-            foodType = "Rainbow"
-            foodCount = quantityLabel.text!
+            foodType = .rainbow
         case 5:
-            foodType = "Fish"
-            foodCount = quantityLabel.text!
+            foodType = .fish
         case 6:
-            foodType = "Bamboo"
-            foodCount = quantityLabel.text!
+            foodType = .bamboo
         case 7:
-            foodType = "Seed"
-            foodCount = quantityLabel.text!
+            foodType = .seed
         default:
-            print("switch")
+            foodType = .unknown
         }
     }
     
