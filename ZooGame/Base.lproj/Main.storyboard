@@ -16,14 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Представьте, что Вы смотритель зоопарка и от  Вас зависят жизни животных" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUv-Xy-VN5">
-                                <rect key="frame" x="20" y="106" width="374" height="113"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пожалуйста, введите количество клеток с животными, которое будет в зоопарке (не более 15)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnX-5R-hz4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пожалуйста, введите количество клеток с животными, которое будет в зоопарке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnX-5R-hz4">
                                 <rect key="frame" x="20" y="282" width="374" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
@@ -48,6 +41,13 @@
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Представьте, что Вы смотритель зоопарка и от  Вас зависят жизни животных" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUv-Xy-VN5">
+                                <rect key="frame" x="10" y="146" width="394" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -62,43 +62,332 @@
             </objects>
             <point key="canvasLocation" x="714.49275362318849" y="97.767857142857139"/>
         </scene>
-        <!--My Table View Controller-->
+        <!--Zoo Table View Controller-->
         <scene sceneID="eXN-s4-FG3">
             <objects>
-                <tableViewController id="gGu-xl-BKc" customClass="MyTableViewController" customModule="ZooGame" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZSF-vG-IxM">
+                <tableViewController id="gGu-xl-BKc" customClass="ZooTableViewController" customModule="ZooGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZSF-vG-IxM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="PHv-7T-OMJ" rowHeight="80" style="IBUITableViewCellStyleDefault" id="Msb-pe-efC">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="88" id="Msb-pe-efC" customClass="TableViewCell" customModule="ZooGame" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="414" height="88"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Msb-pe-efC" id="DpM-RP-xTO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Msb-pe-efC" id="DpM-RP-xTO" customClass="TableViewCell" customModule="ZooGame" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="384.5" height="88"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PHv-7T-OMJ">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="80"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUR-fj-MV6">
+                                            <rect key="frame" x="12" y="11" width="85" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taA-Zx-Ebq">
+                                            <rect key="frame" x="12" y="38" width="118" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMa-xd-Z9X">
+                                            <rect key="frame" x="127" y="36" width="115" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Che-X2-se1">
+                                            <rect key="frame" x="250" y="11" width="95" height="49"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OA1-BY-Red">
+                                            <rect key="frame" x="127" y="8" width="76" height="32"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="additionalLabel" destination="Che-X2-se1" id="LAL-iU-0Iq"/>
+                                    <outlet property="countLabel" destination="taA-Zx-Ebq" id="Qdn-dL-HxC"/>
+                                    <outlet property="eatLabel" destination="SMa-xd-Z9X" id="sbm-Rw-Ri0"/>
+                                    <outlet property="extraLabel" destination="Che-X2-se1" id="60v-aF-60m"/>
+                                    <outlet property="foodLabel" destination="OA1-BY-Red" id="ufQ-Yx-AKA"/>
+                                    <outlet property="typeLabel" destination="RUR-fj-MV6" id="noc-Dt-IEf"/>
+                                    <segue destination="8FH-06-jHe" kind="presentation" identifier="segueFromCell" id="sHv-w8-VKs"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="gGu-xl-BKc" id="o3m-as-IQL"/>
                             <outlet property="delegate" destination="gGu-xl-BKc" id="AFc-YZ-aNx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FZz-Lm-zKi"/>
+                    <navigationItem key="navigationItem" id="FZz-Lm-zKi">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="fg3-TG-xGN">
+                            <connections>
+                                <action selector="nextButton:" destination="gGu-xl-BKc" id="B0J-Pg-xGM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uoy-Z6-b1S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1499" y="98"/>
+            <point key="canvasLocation" x="1498.5507246376812" y="97.767857142857139"/>
+        </scene>
+        <!--StockhouseVC-->
+        <scene sceneID="5gq-64-rvV">
+            <objects>
+                <viewController id="8FH-06-jHe" customClass="StockhouseVC" customModule="ZooGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ko-nt-ki1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Склад" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35z-c7-YPM">
+                                <rect key="frame" x="114" y="45" width="186" height="25.5"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="UTh-MT-1vl">
+                                <rect key="frame" x="102" y="192.5" width="76" height="457"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNk-0p-6XB">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Meat">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="6ia-zO-ZYc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2v-u8-2Jc">
+                                        <rect key="frame" x="0.0" y="60" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Fruit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="54E-BW-BK8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqX-49-9lZ">
+                                        <rect key="frame" x="0.0" y="120" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Hay">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="gdr-mG-zk4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPO-HD-944">
+                                        <rect key="frame" x="0.0" y="180" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Grass">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="hK4-9C-PHB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-nG-VA6">
+                                        <rect key="frame" x="0.0" y="240" width="76" height="37"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                        <state key="normal" title="Rainbow">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="nl4-d5-K04"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa9-CV-3r6">
+                                        <rect key="frame" x="0.0" y="299" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Fish">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="oKo-hb-GIC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiW-oB-Pg0">
+                                        <rect key="frame" x="0.0" y="359" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Bamboo">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="aJU-th-GM0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tnL-95-CCc">
+                                        <rect key="frame" x="0.0" y="419" width="76" height="38"/>
+                                        <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                        <state key="normal" title="Seed">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="feedButtonPressed:" destination="8FH-06-jHe" eventType="touchUpInside" id="jwh-Yr-zJ9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edL-gM-7Na">
+                                <rect key="frame" x="262" y="387" width="71" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="KQg-Gg-nlQ"/>
+                                    <constraint firstAttribute="width" constant="71" id="wOj-qu-z8W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Укажите количество еды для животных" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAe-vf-v1x">
+                                <rect key="frame" x="220" y="288" width="154" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="T2T-E2-dDO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ci9-GQ-xgl">
+                                <rect key="frame" x="246" y="505" width="102" height="69"/>
+                                <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="nyE-bb-q8H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="22"/>
+                                <state key="normal" title="Передать">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendFood:" destination="8FH-06-jHe" eventType="touchUpInside" id="fUY-5H-tjh"/>
+                                    <segue destination="okT-fE-xAa" kind="unwind" unwindAction="unwindToTableVCWithSegue:" id="EeS-zp-7SL"/>
+                                </connections>
+                            </button>
+                            <stepper hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="mZE-f6-o4c">
+                                <rect key="frame" x="250" y="442" width="94" height="32"/>
+                                <color key="backgroundColor" red="1" green="0.91058111320000001" blue="0.1412943814" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="8FH-06-jHe" eventType="valueChanged" id="7XQ-KH-63N"/>
+                                </connections>
+                            </stepper>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxl-Xw-AEx">
+                                <rect key="frame" x="246" y="628" width="98" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vPE-Z9-PxF"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="vPE-Z9-PxF" firstAttribute="trailing" secondItem="yAe-vf-v1x" secondAttribute="trailing" constant="40" id="0lx-J5-Fwe"/>
+                            <constraint firstItem="yAe-vf-v1x" firstAttribute="leading" secondItem="UTh-MT-1vl" secondAttribute="trailing" constant="41" id="2Xa-ur-nB3"/>
+                            <constraint firstItem="edL-gM-7Na" firstAttribute="top" secondItem="yAe-vf-v1x" secondAttribute="bottom" constant="16" id="5QK-0m-Fac"/>
+                            <constraint firstItem="yAe-vf-v1x" firstAttribute="centerX" secondItem="edL-gM-7Na" secondAttribute="centerX" id="82s-Wc-IrS"/>
+                            <constraint firstItem="vPE-Z9-PxF" firstAttribute="bottom" secondItem="Ci9-GQ-xgl" secondAttribute="bottom" constant="234" id="Fx7-Hd-F9r"/>
+                            <constraint firstItem="UTh-MT-1vl" firstAttribute="leading" secondItem="vPE-Z9-PxF" secondAttribute="leading" constant="102" id="K1p-uT-Ahj"/>
+                            <constraint firstItem="UTh-MT-1vl" firstAttribute="centerY" secondItem="6Ko-nt-ki1" secondAttribute="centerY" id="L9I-tw-XJS"/>
+                            <constraint firstItem="mZE-f6-o4c" firstAttribute="top" secondItem="edL-gM-7Na" secondAttribute="bottom" constant="21" id="Q7A-2k-Zvh"/>
+                            <constraint firstItem="mZE-f6-o4c" firstAttribute="centerX" secondItem="Ci9-GQ-xgl" secondAttribute="centerX" id="R5Q-fe-JlF"/>
+                            <constraint firstItem="mZE-f6-o4c" firstAttribute="leading" secondItem="UTh-MT-1vl" secondAttribute="trailing" constant="71" id="WHx-e8-vf8"/>
+                            <constraint firstItem="edL-gM-7Na" firstAttribute="centerX" secondItem="mZE-f6-o4c" secondAttribute="centerX" id="XQO-U7-xiQ"/>
+                            <constraint firstItem="35z-c7-YPM" firstAttribute="top" secondItem="vPE-Z9-PxF" secondAttribute="top" constant="45" id="b16-CS-lB1"/>
+                            <constraint firstItem="Ci9-GQ-xgl" firstAttribute="leading" secondItem="UTh-MT-1vl" secondAttribute="trailing" constant="67" id="dTg-cq-5Z2"/>
+                            <constraint firstItem="35z-c7-YPM" firstAttribute="centerX" secondItem="6Ko-nt-ki1" secondAttribute="centerX" id="daY-Ub-sBh"/>
+                            <constraint firstItem="35z-c7-YPM" firstAttribute="leading" secondItem="vPE-Z9-PxF" secondAttribute="leading" constant="114" id="pml-2s-IQD"/>
+                            <constraint firstItem="edL-gM-7Na" firstAttribute="leading" secondItem="UTh-MT-1vl" secondAttribute="trailing" constant="83" id="tag-z1-mo1"/>
+                            <constraint firstItem="Ci9-GQ-xgl" firstAttribute="top" secondItem="mZE-f6-o4c" secondAttribute="bottom" constant="31" id="xH2-yX-agl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EZe-Gz-NuA"/>
+                    <connections>
+                        <outlet property="bambooPressed" destination="qiW-oB-Pg0" id="DmZ-9o-ctS"/>
+                        <outlet property="fishPressed" destination="Fa9-CV-3r6" id="BlT-TF-hk1"/>
+                        <outlet property="fruitPressed" destination="g2v-u8-2Jc" id="Z4d-nG-FM7"/>
+                        <outlet property="grassPressed" destination="hPO-HD-944" id="X10-7i-u4A"/>
+                        <outlet property="hayPressed" destination="lqX-49-9lZ" id="EjS-kB-gao"/>
+                        <outlet property="infoLabel" destination="yAe-vf-v1x" id="Cr6-rp-5yp"/>
+                        <outlet property="meatPressed" destination="fNk-0p-6XB" id="8Lr-Yj-bnK"/>
+                        <outlet property="quantityLabel" destination="edL-gM-7Na" id="KAw-jI-PI0"/>
+                        <outlet property="rainbowPressed" destination="x5T-nG-VA6" id="V0b-QR-72v"/>
+                        <outlet property="seedPressed" destination="tnL-95-CCc" id="1Ef-aA-ati"/>
+                        <outlet property="sendButton" destination="Ci9-GQ-xgl" id="WFy-vr-xgN"/>
+                        <outlet property="stepper" destination="mZE-f6-o4c" id="VT5-4v-D2e"/>
+                        <outlet property="unusedLabel" destination="kxl-Xw-AEx" id="y9O-Ca-7qm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gi4-5O-SHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="okT-fE-xAa" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2347.826086956522" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d2q-hP-pic">

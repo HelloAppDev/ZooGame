@@ -8,13 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
     @IBOutlet weak var animalsCountTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     func showAlert() {
@@ -26,7 +24,8 @@ class ViewController: UIViewController {
     
     @IBAction func continueButton(_ sender: Any) {
         if animalsCountTextField.text?.isEmpty != true  {
-            performSegue(withIdentifier: "continueSegue", sender: nil)
+            performSegue(withIdentifier: "continueSegue", sender: AnyObject.self)
+            
         } else {
             showAlert()
         }

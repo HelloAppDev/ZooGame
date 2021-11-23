@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150936ED274679F1002044E6 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150936EC274679F1002044E6 /* MyTableViewController.swift */; };
+		150936ED274679F1002044E6 /* ZooTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150936EC274679F1002044E6 /* ZooTableViewController.swift */; };
+		150936EF27495E29002044E6 /* StockhouseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150936EE27495E29002044E6 /* StockhouseVC.swift */; };
 		15B022DB2743F8F1003AA39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022DA2743F8F1003AA39B /* AppDelegate.swift */; };
 		15B022DD2743F8F1003AA39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022DC2743F8F1003AA39B /* SceneDelegate.swift */; };
 		15B022DF2743F8F1003AA39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B022DE2743F8F1003AA39B /* ViewController.swift */; };
@@ -20,7 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		150936EC274679F1002044E6 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		150936EC274679F1002044E6 /* ZooTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooTableViewController.swift; sourceTree = "<group>"; };
+		150936EE27495E29002044E6 /* StockhouseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockhouseVC.swift; sourceTree = "<group>"; };
 		15B022D72743F8F1003AA39B /* ZooGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZooGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B022DA2743F8F1003AA39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15B022DC2743F8F1003AA39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				15B022F927454287003AA39B /* ZooDataAPI.json */,
-				150936EC274679F1002044E6 /* MyTableViewController.swift */,
+				150936EC274679F1002044E6 /* ZooTableViewController.swift */,
+				150936EE27495E29002044E6 /* StockhouseVC.swift */,
 				15B022F527451AE0003AA39B /* ZooDataViewController.swift */,
 				15B022DA2743F8F1003AA39B /* AppDelegate.swift */,
 				15B022DC2743F8F1003AA39B /* SceneDelegate.swift */,
@@ -151,7 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B022F627451AE0003AA39B /* ZooDataViewController.swift in Sources */,
-				150936ED274679F1002044E6 /* MyTableViewController.swift in Sources */,
+				150936EF27495E29002044E6 /* StockhouseVC.swift in Sources */,
+				150936ED274679F1002044E6 /* ZooTableViewController.swift in Sources */,
 				15B022DF2743F8F1003AA39B /* ViewController.swift in Sources */,
 				15B022DB2743F8F1003AA39B /* AppDelegate.swift in Sources */,
 				15B022E52743F8F1003AA39B /* ZooGame.xcdatamodeld in Sources */,

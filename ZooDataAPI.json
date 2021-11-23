@@ -1,102 +1,88 @@
 [
-{
-"zooData": [
-  {
+      {
       "type": "lion",
-      "count": "5",
+      "count": 5,
       "eat": "meat",
-      "food": "23",
-      "age": "3"
+      "food": 23
     
 },
 {
   
       "type": "monkey",
-      "count": "9",
+      "count": 9,
       "eat": "fruit",
-      "food": "32",
-      "age": "2"
+      "food": 32
     
 },
 {
   
       "type": "elephant",
-      "count": "3",
+      "count": 3,
       "eat": "grass",
-      "food": "19",
-      "age": "12"
+      "food": 19
     
 },
 {
   
       "type": "parrot",
-      "count": "14",
+      "count": 14,
       "eat": "seed",
-      "food": "32",
-      "age": "1"
+      "food": 32
     
 },
 {
   
       "type": "pandas",
-      "count": "6",
+      "count": 6,
       "eat": "bamboo",
-      "food": "26",
-      "age": "4"
+      "food": 26
     
 },
 {
   
       "type": "wolves",
-      "count": "3",
+      "count": 3,
       "eat": "meat",
-      "food": "21",
-      "age": "6"
+      "food": 21
     
 },
 {
   
       "type": "zebras",
-      "count": "4",
+      "count": 4,
       "eat": "hay",
-      "food": "26",
-      "age": "7"
+      "food": 26
     
 },
 {
   
       "type": "unicorn",
-      "count": "2",
+      "count": 2,
       "eat": "rainbow",
-      "food": "25",
-      "age": "18"
+      "food": 25
     
 },
 {
   
       "type": "hippo",
-      "count": "4",
-      "eat": "fruits",
-      "food": "22",
-      "age": "10"
+      "count": 4,
+      "eat": "fruit",
+      "food": 22
     
 },
 {
   
       "type": "shark",
-      "count": "7",
+      "count": 7,
       "eat": "fish",
-      "food": "44",
-      "age": "13"
+      "food": 44
     
 },
 {
   
       "type": "bear",
-      "count": "3",
+      "count": 3,
       "eat": "fish",
-      "food": "44",
-      "age": "8"
-    }]
-}
+      "food": 44
+    }
 ]
