@@ -38,6 +38,7 @@ class ZooTableViewController: UITableViewController {
         let index = indexPath.row
         let cage = zooDataList[index]
         
+//   Внесение в элементы ячейки данных из JSON и получение второго вида корма в label со склада
         cell.typeLabel?.text = cage.type
         cell.countLabel?.text = "Quantity: \(cage.count)"
         cell.foodLabel?.text = "Food: \(cage.foodType)"
@@ -72,6 +73,7 @@ class ZooTableViewController: UITableViewController {
         }
     }
     
+//    Передача корма со склада в выбранную клетку
     @IBAction func unwindToTableVC(segue: UIStoryboardSegue) {
         guard let svc = segue.source as? StockhouseVC,
               let feedIdentifier = feedIdentifier else { return }
@@ -82,10 +84,12 @@ class ZooTableViewController: UITableViewController {
         
     }
     
+//    Кнопка "конец хода". Расчёт количества оставшейся еды исходя из количества животных
     @IBAction func nextButton(_ sender: Any) {
         for index in 0..<zooDataList.count {
             zooDataList[index].eatFood()
         }
+//        Удаление ячейки из-за отсутствия животных
         zooDataList = zooDataList.filter{ $0.count>0 }
         self.tableView.reloadData()
     }

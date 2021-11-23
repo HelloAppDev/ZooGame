@@ -1,5 +1,6 @@
 import UIKit
 
+// Модель данных JSON
 struct AnimalData: Codable {
     let type: String
     var count: Int
@@ -10,6 +11,7 @@ struct AnimalData: Codable {
     private(set) var badFoodCount: Int?
 }
 
+// Расширение для получения данных из склада
 extension AnimalData {
     mutating func addFood(foodType: FoodType, foodCount: Int) {
         if self.foodType == foodType {
@@ -20,6 +22,7 @@ extension AnimalData {
         }
     }
     
+// Функция вероятности появления приплода 30%
     mutating func eatFood() {
         foodCount = foodCount - (count * minimumFoodCount)
         if foodCount > 0 {
@@ -28,6 +31,7 @@ extension AnimalData {
                 count += 1
             }
         } else {
+//   Уменьшение количества животных в клетке из-за недостатка корма
             count = count - (-foodCount/minimumFoodCount)
             foodCount =  0
         }

@@ -22,19 +22,19 @@ class StockhouseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+//    Ярлыки, степпер и кнопка, скрытые до того, как понадобятся
     func isHiddenFalse() {
         infoLabel.isHidden = false
         quantityLabel.isHidden = false
         stepper.isHidden = false
         sendButton.isHidden = false
     }
-    
+//    Выбор количества корма и приведение значения String к Int
     @IBAction func stepperAction(_ sender: UIStepper) {
         self.quantityLabel.text = Int(sender.value).description
         foodCount = Int(quantityLabel.text ?? "0") ?? 0
     }
-    
+// Выбор типа корма осуществляется по тегам
     @IBAction func feedButtonPressed(_ sender: UIButton) {
         isHiddenFalse()
         switch sender.tag {

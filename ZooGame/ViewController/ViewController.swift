@@ -14,11 +14,10 @@ class ViewController: UIViewController {
         alert.addAction(defaultAction)
         self.present(alert, animated: true)
     }
-    
+//    Переход на следующий вьюконтроллер при не пустом textField
     @IBAction func continueButton(_ sender: Any) {
         if animalsCountTextField.text?.isEmpty != true  {
             performSegue(withIdentifier: "continueSegue", sender: AnyObject.self)
-            
         } else {
             showAlert(message: "Заполните поле с количеством клеток")
         }

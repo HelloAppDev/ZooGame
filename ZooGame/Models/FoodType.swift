@@ -1,5 +1,6 @@
 import Foundation
 
+// Перечисление типов корма
 enum FoodType: String, Codable {
     case meat
     case fruit
